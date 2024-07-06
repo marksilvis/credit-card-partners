@@ -46,9 +46,25 @@ Chase,Emirates
 Chase,Iberia
 Chase,JetBlue
 Chase,Singapore
-Chase,Southwest Airlines
-Chase,United Airlines
+Chase,Southwest
+Chase,United
 Chase,Virgin Atlantic
 Chase,Marriott Bonvoy
 Chase,IHG
 Chase,Hyatt
+BILT,Alaska
+BILT,British Airways
+BILT,Iberia
+BILT,Virgin Atlantic
+BILT,United
+BILT,Turkish
+BILT,Emirates
+BILT,Cathay Pacific
+BILT,Avianca 
+BILT,Air France
+BILT,Air Canada
+BILT,Aer Lingus
+BILT,Hilton Honors
+BILT,Hyatt
+BILT,Marriott Bonvoy
+BILT,IHG
