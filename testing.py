@@ -1,18 +1,3 @@
-import streamlit as st
+from streamlit_extras.buy_me_a_coffee import button
 
-comparison = st.selectbox(
-    'Select how many credit cards you are comparing:', 
-    (2, 3))
-st.write('Result is: ', comparison)
-
-cc = []
-for x in range(comparison):
-    option = st.selectbox(
-        'Select your credit card company', 
-        ('Amex', 'BILT', 'Chase', 'Capital One'),
-        key = x)
-    st.write('You selected:', option)
-    cc.append(option)
-    del option
-
-st.write(cc)
+button(username="kharsono", floating=False, width=221)

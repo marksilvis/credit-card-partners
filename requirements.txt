@@ -2,3 +2,4 @@ streamlit
 pandas
 matplotlib_venn
 matplotlib
+streamlit_extras.buy_me_a_coffee
