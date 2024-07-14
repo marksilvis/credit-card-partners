@@ -14,7 +14,7 @@ cc = []
 for x in range(comparison):
     option = st.selectbox(
         'Select your credit card company', 
-        ('American Express', 'BILT', 'Chase', 'Capital One'),
+        ('American Express', 'BILT', 'Chase', 'Capital One', 'Citi'),
         key = x)
     cc.append(option)
     del option
@@ -70,6 +70,6 @@ fig = plt.show
 st.set_option('deprecation.showPyplotGlobalUse', False)
 st.pyplot(plt.show())
 
-
+### MONETIZATION ###
 button(username="kharsono", floating=False, width=221, 
        bg_color='#FFA62F')

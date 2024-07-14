@@ -13,7 +13,7 @@ Capital One,Qantas
 Capital One,Singapore
 Capital One,TAP Air Portugal
 Capital One,Turkish
-Capital One,Virgin Red
+Capital One,Virgin
 Capital One,Accor Live Limitless
 Capital One,Choice Privileges
 Capital One,Wyndham
@@ -33,7 +33,7 @@ American Express,Iberia
 American Express,JetBlue
 American Express,Qantas
 American Express,Singapore
-American Express,Virgin Atlantic
+American Express,Virgin
 American Express,Qatar
 American Express,Choice Privileges
 American Express,Hilton Honors
@@ -48,14 +48,14 @@ Chase,JetBlue
 Chase,Singapore
 Chase,Southwest
 Chase,United
-Chase,Virgin Atlantic
+Chase,Virgin
 Chase,Marriott Bonvoy
 Chase,IHG
 Chase,Hyatt
 BILT,Alaska
 BILT,British Airways
 BILT,Iberia
-BILT,Virgin Atlantic
+BILT,Virgin
 BILT,United
 BILT,Turkish
 BILT,Emirates
@@ -68,3 +68,21 @@ BILT,Hilton Honors
 BILT,Hyatt
 BILT,Marriott Bonvoy
 BILT,IHG
+Citi,Cathay Pacific
+Citi,AeroMexico
+Citi,Avianca 
+Citi,Emirates
+Citi,Etihad
+Citi,EVA Air
+Citi,Air France
+Citi,JetBlue
+Citi,Qantas
+Citi,Qatar
+Citi,Singapore
+Citi,Thai
+Citi,Turkish
+Citi,Virgin
+Citi,Accor Live Limitless
+Citi,Choice Privileges
+Citi,Leaders Club
+Citi,Wyndham
