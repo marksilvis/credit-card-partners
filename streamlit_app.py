@@ -82,20 +82,17 @@ receiver_email = "cc.travel.partners@gmail.com"  # Enter receiver address
 password = "mdgs jhkf jtdy mczi"
 
 with st.form("subscription_form"):
-   st.write("If you find value, I'll take a coffee! If you want to be updated, send your email!")
+   st.write("If you find value, I'll take a coffee! If you want to be updated for next features, send your email!")
    button(username="kharsono", floating=False, width=221, 
        bg_color='#FFA62F')
    user_email = st.text_input('Email Address:', None)
    submit = st.form_submit_button('Send')
    
-   
    if (submit == True and "@" in user_email):
      message = user_email
      context = ssl.create_default_context()
      with smtplib.SMTP_SSL(smtp_server, port, context=context) as server:
-       st.write("here1.5")
        server.login(sender_email, password)
-       st.write("here2")
        server.sendmail(sender_email, receiver_email, message)
      st.write("Thanks")
 
