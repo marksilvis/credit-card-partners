@@ -3,8 +3,10 @@ import pandas as pd
 from matplotlib_venn import venn2, venn3
 from matplotlib import pyplot as plt
 from streamlit_extras.buy_me_a_coffee import button
+import smtplib, ssl
 
 st.title("US Credit Card Travel Partners", 'center')
+
 
 ### LOGIC UI INTERFACE ###
 comparison = st.selectbox(
@@ -18,6 +20,7 @@ for x in range(comparison):
         key = x)
     cc.append(option)
     del option
+
 
 ### VENN CODE ###
 # Load CSV file
@@ -63,13 +66,36 @@ elif len(partner_sets) == 2:
 else:
     print("Error: Number of credit cards must be 2 or 3")
 
-### PLOTTING ###
+# Plotting Venn Diagram
 plt.title("Credit Card Partners", fontsize = 14)
 plt.savefig('test.png')
 fig = plt.show
 st.set_option('deprecation.showPyplotGlobalUse', False)
 st.pyplot(plt.show())
 
-### MONETIZATION ###
-button(username="kharsono", floating=False, width=221, 
+
+### SIGN UP & MONETIZATION ###
+port = 465  # For SSL
+smtp_server = "smtp.gmail.com"
+sender_email = "cc.travel.partners@gmail.com"  # Enter your address
+receiver_email = "cc.travel.partners@gmail.com"  # Enter receiver address
+password = "mdgs jhkf jtdy mczi"
+
+with st.form("subscription_form"):
+   st.write("If you find value, I'll take a coffee! If you want to be updated, send your email!")
+   button(username="kharsono", floating=False, width=221, 
        bg_color='#FFA62F')
+   user_email = st.text_input('Email Address:', None)
+   submit = st.form_submit_button('Send')
+   
+   
+   if (submit == True and "@" in user_email):
+     message = user_email
+     context = ssl.create_default_context()
+     with smtplib.SMTP_SSL(smtp_server, port, context=context) as server:
+       st.write("here1.5")
+       server.login(sender_email, password)
+       st.write("here2")
+       server.sendmail(sender_email, receiver_email, message)
+     st.write("Thanks")
+
