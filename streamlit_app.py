@@ -95,4 +95,6 @@ with st.form("subscription_form"):
        server.login(sender_email, password)
        server.sendmail(sender_email, receiver_email, message)
      st.write("Thanks")
+   else:
+      st.write("Boo, no email yet  :(")
 
