@@ -4,4 +4,3 @@ matplotlib_venn
 matplotlib
 streamlit_extras
 st_paywall
-ssl
