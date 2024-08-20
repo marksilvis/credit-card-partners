@@ -7,7 +7,7 @@ import smtplib, ssl
 
 st.title("US Credit Card Travel Partners", 'center')
 
-
+# st.write('debug here')
 ### LOGIC UI INTERFACE ###
 comparison = st.selectbox(
     'Select how many credit cards you are comparing:', 
@@ -36,7 +36,7 @@ for card in cc:
 # Create Venn diagram
 if len(partner_sets) == 3:
     # Assign unique colors to intersection areas
-    c = ('red', 'green', 'blue', 'yellow', 'purple', 'cyan', 'gray')
+    c = ('red', 'green', 'blue')
     v = venn3(subsets=partner_sets, set_labels=cc, set_colors=c, normalize_to=100)
 
     # Add travel partner names to intersection areas
@@ -52,7 +52,7 @@ if len(partner_sets) == 3:
     for t in v.set_labels: t.set_fontsize(12)
     for t in v.subset_labels: t.set_fontsize(8)
 elif len(partner_sets) == 2:
-    c = ('red', 'green', 'blue')
+    c = ('red', 'green')
     v = venn2(subsets=partner_sets, set_labels=cc, set_colors=c, normalize_to=100)
 
     # Add travel partner names to intersection areas
