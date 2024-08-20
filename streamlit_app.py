@@ -69,9 +69,7 @@ else:
 # Plotting Venn Diagram
 plt.title("Credit Card Partners", fontsize = 14)
 plt.savefig('test.png')
-fig = plt.show
-st.set_option('deprecation.showPyplotGlobalUse', False)
-st.pyplot(plt.show())
+st.pyplot(plt.gcf())
 
 
 ### SIGN UP & MONETIZATION ###
