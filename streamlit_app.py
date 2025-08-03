@@ -16,7 +16,7 @@ cc = []
 for x in range(comparison):
     option = st.selectbox(
         'Select your credit card company', 
-        ('American Express', 'BILT', 'Chase', 'Capital One', 'Citi'),
+        ('American Express', 'BILT', 'Chase', 'Capital One', 'Citi', 'Wells Fargo'),
         key = x)
     cc.append(option)
     del option
